@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "fonts.css";
 
 * {
   box-sizing: border-box;
@@ -10,11 +11,11 @@
 header,
 .panel,
 .timestamp {
-  font-family: Arial, sans-serif;
+  font-family: "Proxima Nova", sans-serif;
 }
 
 h3 {
-  font-family: Georgia, serif;
+  font-family: "PF Regal", serif;
 }
 
 body > header {
@@ -49,6 +50,8 @@ body > header ul {
 
 body > header li {
   padding-right: 15px;
+
+  font-weight: 600;
 }
 
 .panel {
@@ -57,13 +60,102 @@ body > header li {
   height: 45px;
   padding: 15px;
 
-  border-bottom: 1px solid #cccf;
+  border-bottom: 1px solid #ccc;
   background-color: #fff;
 
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .panel button {
   position: absolute;
   right: 0;
+}
+
+main {
+  height: 100vh;
+  padding-top: 15px;
+
+  background-color: rgb(242, 242, 242);
+}
+
+section {
+  width: 90vw;
+  margin: 0 auto;
+
+  border: 1px solid #ccc;
+  border-top: 4px solid #b88b58;
+  background-color: #fff;
+}
+
+.top-stories {
+  height: 350px;
+  padding: 16px 18px 18px;
+}
+
+.top-stories__header {
+  padding: 16px 18px 0;
+
+  text-transform: uppercase;
+
+  color: gray;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+
+  padding: 18px;
+}
+
+.is-important {
+  display: flex;
+
+  width: 50%;
+}
+.is-important {
+  font-size: 34px;
+}
+
+.container-right {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+
+.container-right .card {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+
+}
+
+.container-right {
+  display: inline-flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+
+.container-right .card {
+  display: flex;
+
+ width: 50%;
+ height: 100%;
+
+  flex-flow: column nowrap;
+}
+
+.container-right .card h3 {
+  flex: 2;
+}
+
+.timestamp {
+  flex: 1;
 }
